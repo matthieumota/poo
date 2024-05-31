@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Application;
+use App\Models\Car;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -15,6 +16,7 @@ class HomeController extends Controller
                 new Application('A', 'active'),
                 new Application('B', 'inactive'),
             ],
+            'cars' => Car::paginate(10),
         ]);
     }
 }

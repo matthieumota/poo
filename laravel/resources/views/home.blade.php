@@ -19,4 +19,17 @@
             </li>
         @endforeach
     </ul>
+
+    <ul>
+        @foreach ($cars as $car)
+            <li>
+                {{ $car->brand }}
+                {{ $car->model }}
+                à
+                {{ $car->price }} €
+            </li>
+        @endforeach
+    </ul>
+
+    {{ $cars->links() }}
 @endsection
