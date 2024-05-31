@@ -7,6 +7,13 @@
         <title>Mon site</title>
     </head>
     <body>
+        <nav>
+            <a href="./">Accueil</a>
+            <a href="./login">Connexion</a>
+            <a href="./register">Inscription</a>
+            <a href="./logout">Logout</a>
+        </nav>
+
         @yield('content')
     </body>
 </html>
